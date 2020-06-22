@@ -30,6 +30,7 @@ app.GetUser =(User) =>{
 })}
 
 app.displayInfo =(info) => {
+    
     // console.log(info)
     const htmlstring1 =`
         <h2> Name: ${info.login}<\h2>
@@ -54,6 +55,9 @@ app.displayInfo =(info) => {
 app.displayRepos =(info) =>{
     var htmlstring2 =''
     var stylecount = 1;
+    var htmlstring3 = `<h3>
+    Repo List</h3>`;
+    $(".output2").append(htmlstring3);
     info.forEach(repo => {
         if(repo.description ==null){
             htmlstring2=`
@@ -72,7 +76,7 @@ app.displayRepos =(info) =>{
         else{
             htmlstring2=`
             <div class="style${stylecount}">
-                <a href=${repo.html_url}> Name: ${repo.name} Description: ${repo.description}</a>
+                <a href=${repo.html_url}> Name: ${repo.name} <br> Description: ${repo.description}</a>
             </div>
                 `;
             if (stylecount ==5)
