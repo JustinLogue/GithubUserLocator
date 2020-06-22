@@ -1,1 +1,2 @@
-# GitHubUserBrowser
+# GitHubUserLocator
+
