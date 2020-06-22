@@ -1,0 +1,29 @@
+input{
+    width: 200px;
+}
+
+body{
+    text-align: center;
+}
+
+.style1{
+    background:red;
+}
+
+.style2{
+    background:blue;
+}
+
+.style3{
+    background:yellow;
+}
+
+.style4{
+    background:purple;
+}
+
+.style5{
+    background:green;
+}
+
+
